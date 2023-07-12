@@ -91,12 +91,12 @@ class SuccessScreen extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: height * .03),
-                            const  Divider(
+                              const Divider(
                                 color: Color.fromRGBO(199, 66, 37, 1),
                                 endIndent: 40,
                                 indent: 40,
                               ),
-                           const   SizedBox(
+                              const SizedBox(
                                 height: 18,
                               ),
                               ContainerRow(
@@ -105,8 +105,8 @@ class SuccessScreen extends StatelessWidget {
                                   first: 'Reference Code', second: '----'),
                               ContainerRow(first: 'Date', second: '1 fab 2022'),
                               ContainerRow(first: 'Time', second: '9.13 PM'),
-                            const  SizedBox(height: 15),
-                           const   Divider(
+                              const SizedBox(height: 15),
+                              const Divider(
                                 color: Color.fromRGBO(199, 66, 37, 1),
                                 endIndent: 40,
                                 indent: 40,
@@ -114,7 +114,7 @@ class SuccessScreen extends StatelessWidget {
                               Container(
                                 // color: Colors.amber,
                                 margin: EdgeInsets.only(left: 60, right: 60),
-                                child:const Row(
+                                child: const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -150,20 +150,20 @@ class ContainerRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       // color: Colors.amber,
-      margin: const EdgeInsets.only(left: 22, right: 22, top: 6),
+      margin: const EdgeInsets.only(left: 22, right: 22, top: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
             first,
-            style:const TextStyle(
+            style: const TextStyle(
               color: Color.fromRGBO(87, 87, 87, 1),
-              fontSize: 20,
+              fontSize: 15,
             ),
           ),
           Text(
             second,
-            style:const TextStyle(color: Colors.black, fontSize: 20),
+            style: const TextStyle(color: Colors.black, fontSize: 15),
           )
         ],
       ),
